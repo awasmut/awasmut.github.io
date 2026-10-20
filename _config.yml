@@ -1,5 +1,25 @@
-title: Cayman Theme
-description: Coming soon...
-remote_theme: pages-themes/cayman@v0.2.0
+# Site
+title: awasmut
+tagline: a graphics-programming devlog
+description: >-
+  Notes, demos and code from an amateur's journey into graphics programming.
+author: awasmut
+url: "https://awasmut.github.io"
+baseurl: ""
+
+# Clean post URLs: /posts/<slug>/
+permalink: /posts/:title/
+
+# Build
+highlighter: rouge
+kramdown:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false
 plugins:
-- jekyll-remote-theme
+  - jekyll-feed
+exclude:
+  - README.md
+  - LICENSE
+  - .github

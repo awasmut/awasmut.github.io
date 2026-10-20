@@ -1,0 +1,50 @@
+/* awasmut devlog — one lean stylesheet, dark theme */
+:root{
+  --bg:#14161b; --fg:#d8dce4; --dim:#98a1af; --line:#272c35;
+  --accent:#6cb6ff; --code-bg:#1b1e25;
+}
+*{box-sizing:border-box}
+body{background:var(--bg); color:var(--fg);
+  font:16px/1.65 -apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  margin:0; padding:2rem 1.25rem 3rem; max-width:52rem}
+a{color:var(--accent); text-decoration:none}
+a:hover{text-decoration:underline}
+h1{font-size:1.55em; margin:1.2em 0 .4em}
+p{margin:0 0 1em} ul,ol{margin:0 0 1em 1.4em; padding:0}
+hr{border:0; border-top:1px solid var(--line); margin:2em 0}
+
+.site-header{margin-bottom:1.5rem}
+.site-title{font-weight:700; color:var(--fg)}
+nav{display:inline-block; margin:.3rem 0 0}
+.site-footer{margin-top:2rem; color:var(--dim); font-size:.9em}
+.site-footer p{margin:0 0 .4em}
+.site-footer a{color:var(--accent)}
+
+.post-header h1{margin:0}
+.post-meta{color:var(--dim); font-size:.9em; margin:.2rem 0 1.4rem}
+.post-list{list-style:none; padding:0}
+.post-list li{margin:.5rem 0}
+.dim{color:var(--dim)}
+
+figure{margin:0}
+figure img{width:100%; height:auto; border:1px solid var(--line); border-radius:6px; display:block}
+figcaption{color:var(--dim); font-size:.85em; text-align:center; margin-top:.6rem}
+
+pre,.highlight{background:var(--code-bg); border:1px solid var(--line);
+  border-radius:6px; padding:.8rem 1rem; overflow-x:auto; margin:1.2em 0}
+code{font:14px/1.55 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; white-space:pre}
+p code,li code{background:var(--code-bg); padding:.1em .35em; border-radius:4px}
+
+video{display:block; margin:1.2em auto; max-width:100%; max-height:70vh;
+  border:1px solid var(--line); border-radius:6px}
+
+/* rouge (pygments classes) — dark palette */
+.highlight,.highlight pre,.highlight code{background:var(--code-bg); color:var(--fg)}
+.highlight .c1,.highlight .cm,.highlight .cs,.highlight .c{color:#7d9aab}
+.highlight .k,.highlight .kc,.highlight .kd,.highlight .kf,.highlight .kr{color:#6cb6ff}
+.highlight .kt{color:#c39bd8}
+.highlight .sb,.highlight .sc,.highlight .sd,.highlight .s2,.highlight .se,.highlight .sh,.highlight .si,.highlight .sx,.highlight .sr,.highlight .s1,.highlight .ss{color:#e8b26a}
+.highlight .mi,.highlight .mf,.highlight .mh,.highlight .mo,.highlight .mx{color:#e58f7a}
+.highlight .na,.highlight .nf,.highlight .nn,.highlight .nv,.highlight .nc,.highlight .nb,.highlight .nt{color:#d8dce4}
+.highlight .o,.highlight .ow{color:#98a1af}
+.highlight .err{color:#ff6b7a}
